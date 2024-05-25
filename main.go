@@ -5,7 +5,7 @@ import (
     "fmt"
     "log"
 
-    "model"
+    "github.com/thorstenkloehn/HeadlessCmst/model"
 )
 
 func main() {

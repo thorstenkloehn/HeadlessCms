@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "github.com/thorstenkloehn/HeadlessCms/datenbank"
+)
+
 
 func main() {
- fmt.Println("Hello, World!")
+
+    start := datenbank.Dbinfo()
+    fmt.Println(start)
+
+
 }

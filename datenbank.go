@@ -1,10 +1,10 @@
-package datenbank
+package main
 
 import (
     "encoding/json"
     "fmt"
     "os"
-)
+)  
 
 // Database repräsentiert die Konfiguration einer Datenbank.
 type Database struct {
@@ -22,7 +22,7 @@ type Config struct {
 
 // Dbinfo liest die Konfigurationsdatei und gibt eine Datenbankverbindungszeichenkette zurück.
 // Es gibt eine leere Zeichenkette zurück, wenn es einen Fehler beim Lesen der Konfigurationsdatei gibt oder wenn einer der erforderlichen Werte fehlt.
-func Dbinfo() string {
+func dbinfo() string {
     file, err := os.Open("config.json")
     if err != nil {
         fmt.Println(err)

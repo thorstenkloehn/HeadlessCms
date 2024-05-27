@@ -2,14 +2,14 @@ package main
 
 import (
     "fmt"
-    "github.com/thorstenkloehn/HeadlessCms/datenbank"
+
 )
 
-
+// Die Hauptfunktion des Programms.
 func main() {
+    // Rufen Sie die Dbinfo-Funktion aus dem datenbank-Paket auf, um eine Datenbankverbindungszeichenkette zu erhalten.
+    start := dbinfo()
 
-    start := datenbank.Dbinfo()
+    // Drucken Sie die Datenbankverbindungszeichenkette auf die Konsole.
     fmt.Println(start)
-
-
 }
